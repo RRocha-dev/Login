@@ -1,0 +1,23 @@
+name: Login
+version: '${project.version}'
+main: br.com.rederock.login.Login
+api-version: 1.19
+
+commands:
+  login:
+    aliases: [logar,entrar]
+    usage: /<command> <Senha>
+    description: Logar sua conta.
+    permission: login.use
+
+  registrar:
+    aliases: [register]
+    usage: /<command> <Sua Senha> <Confirma Senha>
+    description: Registra novo usuário.
+    permission: register.use
+
+  mudarsenha:
+    aliases: [changepassword,trocarsenha]
+    usage: /<command> <Senha Antiga> <Senha Nova>
+    description: Troca sua senha.
+    permission: changepassword.use
